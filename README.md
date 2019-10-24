@@ -1,40 +1,20 @@
 # BUAAthesis
 
-北航毕设论文LaTeX模板
+北航硕士毕设开题报告LaTeX模板
 
-## 项目说明
+# 使用
 
-这是北航开源俱乐部维护的的北航毕设论文的LaTeX模板
+1. 运行命令`./run.sh`启动docker
+2. 编译 `make master`
 
-目前仍在开发中，欢迎关注进展，提交bug/issue，甚至贡献代码
+如果需要字数统计，运行`texcount sample-master.tex`
 
-## 预览
+# 说明
+暂时找不到北航毕设开题报告的官方word，暂时根据往年的开题报告在学位论文的基础上做修改。主要修改内容是去除不必要的内容，修改必要文字等。
 
-项目发布了最新版本的编译好的[PDF样例文档](https://github.com/BHOSC/BUAAthesis/releases/latest)供大家预览：
+仅支持master 开题报告。
 
-+ 本科：https://github.com/BHOSC/BUAAthesis/releases/download/v0.1/sample-bachelor.pdf
-+ 硕士：https://github.com/BHOSC/BUAAthesis/releases/download/v0.1/sample-master.pdf
-+ 博士：https://github.com/BHOSC/BUAAthesis/releases/download/v0.1/sample-doctor.pdf
-
-## 最佳实践
-
-**目前学院的要求是毕设论文必须以Word格式提交，这给使用LaTeX
-模板书写毕设论文的同学带来了诸多不便。为此，我们推荐使用在线工
-具将PDF文档转为Word格式：**
-
-[https://cloud.gonitro.com/](https://cloud.gonitro.com/) 需注册，经过尝试本链接效果更好，可以较好处理目录、段落格式和字体等问题。
-
-[http://convertonlinefree.com/PDFToWORDEN.aspx](http://convertonlinefree.com/PDFToWORDEN.aspx)
- 
-**以上链接对公式转换效果均不好，推荐使用pandoc转换或使用其他公式插件进行公式插入**
-
-## 依赖
-
-模板依赖v2.0及以上版本的ctex包，请使用较新版本的LaTeX发行版。
-
-目前已经测试的LaTeX发行版包括：
-
-+ TeXLive 2015、TeXLive 2016（**推荐**）
-+ CTeX 2.9.3
-
-对于老版本的LaTeX发行版，请通过包管理器升级ctex的版本。
+# TODO
+- [ ] 根据官方word修改开题报告模板
+- [ ] 增加文献综述模板
+- [ ] 增加开题报告的beamer
