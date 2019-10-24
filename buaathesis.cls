@@ -118,13 +118,13 @@ The LaTeX template for thesis of BUAA]
     \else
         \if@twoside
             \fancyhead[CO]{\zihao{-5}\songti
-                \buaa@university\buaa@headdegree 学位论文\vspace{1.5mm}
+                \buaa@university\buaa@headdegree (开题报告)\vspace{1.5mm}
             }
             \fancyhead[CE]{\zihao{-5}\songti\leftmark\vspace{1.5mm}}
         \else
             \fancyhead[C]{\zihao{-5}\songti
                 \ifthenelse{\isodd{\value{page}}}
-                    {\buaa@university\buaa@headdegree 学位论文}
+                    {\buaa@university\buaa@headdegree (开题报告)}
                     {\leftmark}
                 \vspace{1.5mm}
             }
@@ -561,15 +561,15 @@ The LaTeX template for thesis of BUAA]
                     {
                         \zihao{5}\heiti
                         \begin{flushleft}
-                            中图分类号：\buaa@category  \\
+                            % 中图分类号：\buaa@category  \\
 							%中图分类号：\buaa@category\hfill 密级\ding{73}~~\buaa@mibao \\ % 保密论文时用此行代码替换上行代码即可
-                            论\,\,文\,\,编\,\,号：\buaa@thesisID\\
+                            % 论\,\,文\,\,编\,\,号：\buaa@thesisID\\
                         \end{flushleft}
                     }
                     \vskip 80bp
                     \includegraphics[width=.5\textwidth]{figure/buaaname.jpg}
                     \vskip 30bp
-                    \centerline{\zihao{0}\ziju{0.2}\hwxingkai\buaa@degree 论文}
+                    \centerline{\zihao{0}\ziju{0.2}\heiti \buaa@degree（开题报告）}
                     ~~\\
                     %\vskip 100bp
                     \vspace*{\stretch{5}}
@@ -1005,9 +1005,9 @@ The LaTeX template for thesis of BUAA]
         \pagestyle{fancy}
         \frontmatter
     \else
-        \titleeng                 %研究生英文封面
-        \timingye                 %研究生题名页
-        \creationanduse           %研究生独创性声明和使用授权书
+        % \titleeng                 %研究生英文封面
+        % \timingye                 %研究生题名页
+        % \creationanduse           %研究生独创性声明和使用授权书
         \clearemptydoublepage
         \frontmatter
     \fi
@@ -1129,7 +1129,7 @@ The LaTeX template for thesis of BUAA]
         \ifbuaa@bachelor
             \degree{学士学位}{Bachelor}{学士}
         \else
-            \degree{硕士学位}{Master}{硕士}
+            \degree{毕业设计}{Master}{毕业设计}
         \fi
     \fi
 \fi
